@@ -6,5 +6,5 @@ def imshow(X, resize=None):
     img = Image.open(X)
     img = np.resize(img,resize)
     fig, ax = plt.subplots()
-    ax.imshow(img, cmap='jet', interpolation='nearest')
+    ax.imshow(img)
     plt.show()
