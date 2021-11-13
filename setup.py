@@ -1,6 +1,6 @@
 from distutils.core import setup
 from setuptools import find_packages
-setup(name='ep91aqud',
+setup(name='ep91aqyd',
 version='0.1',
 author='DSSS',
 author_email='varun.sai.varanasi@fau.de',
