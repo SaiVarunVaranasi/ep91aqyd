@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 def imshow(X, resize=None):
     img = cv2.imread(X)
-    img = np.resize(img,resize)
+    img = res = cv2.resize(img, dsize=resize, interpolation=cv2.INTER_CUBIC)
     fig, ax = plt.subplots()
     ax.imshow(img)
     plt.show()
