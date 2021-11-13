@@ -5,4 +5,4 @@ version='0.1.6',
 author='DSSS',
 author_email='varun.sai.varanasi@fau.de',
 packages=find_packages(),
-install_requires=['numpy','opencv-python', 'matplotlib'])
+install_requires=['numpy','Pillow', 'matplotlib'])
