@@ -7,6 +7,6 @@ import matplotlib.image as mpimg
 def imshow(X, resize=None):
     img = Image.open(X)
     img = np.resize(X,resize)
-    imgplot = plt.imshow(img)
+    plt.imshow(img)
     plt.show()
-    return imgplot
+    
