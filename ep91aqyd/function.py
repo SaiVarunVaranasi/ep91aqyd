@@ -2,9 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def imshow(X, resize):
-    arr = np.load(X)
-    img = Image.fromarray(arr)
-    img.resize(size=(100, 100))
+    file = open(X)
+    img = json.load(file)
+    file.close()
+    img = np.resize(img, resize)
     fig, ax = plt.subplots()
     ax.imshow(img)
     plt.show()
