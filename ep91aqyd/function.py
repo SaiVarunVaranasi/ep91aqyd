@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def imshow(X, resize):
     file = open(X)
-    img = np.load(file)
+    img = np.load(file, , "r")
     file.close()
     img = np.resize(img, resize)
     fig, ax = plt.subplots()
