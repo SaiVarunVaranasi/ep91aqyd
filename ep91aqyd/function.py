@@ -1,10 +1,10 @@
 import numpy as np
-import cv2
 import matplotlib.pyplot as plt
 
 def imshow(X, resize):
-    img = cv2.imread(X)
-    img = cv2.resize(img, dsize=resize, interpolation=cv2.INTER_CUBIC)
+    arr = np.load('img.npy')
+    img = Image.fromarray(arr)
+    img.resize(size=(100, 100))
     fig, ax = plt.subplots()
     ax.imshow(img)
     plt.show()
