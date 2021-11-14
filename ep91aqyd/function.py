@@ -3,4 +3,4 @@ import matplotlib.pyplot as plt
 
 def imshow(X, resize):
     X = np.resize(X,resize)
-    PLT.imshow(X)
+    plt.imshow(X)
